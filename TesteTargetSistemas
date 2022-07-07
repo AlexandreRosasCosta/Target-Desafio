@@ -1,0 +1,52 @@
+ 2)
+def calcularFibonacci(numero):
+    aux = 0
+    v1 = 0
+    v2 = 1
+    while True:
+        aux = v2
+        v2 = v2 + v1
+        v1 = aux
+        if (numero == v2):
+            print("Número está na lista!")
+            break
+        elif(numero < v2):
+            print("Número não presente em lista!")
+            break
+numero = 3000000
+calcularFibonacci(numero)
+
+3)Está desenvolvido na pasta
+
+
+4)
+totalPercentual = 67836.43 + 36678.66 + 27165.48 + 29229.88 + 19849.53
+def calcularPercentual(estado):
+    return round((estado*100)/totalPercentual)
+
+opcao = input("Escolha o estado: ")
+match opcao:
+    case 'SP': estado = 67836.43
+    case 'RJ': estado = 36678.66
+    case 'ES': estado = 27165.48
+    case 'MG': estado = 29229.88
+    case default: estado = 19849.53
+
+percentualEstado = calcularPercentual(estado)
+print("O percentual do estado de "+opcao+" é de "+str(percentualEstado)+"%")
+
+5)
+def inverterString(texto):
+  return texto[::-1]
+
+texto = input("Escreva a palavra: ")
+print(inverterString(texto))
+
+OU 
+
+palavra = input("Informe uma palavra: ")
+inverso = []
+for i in range(len(palavra)-1,-1,-1):
+    inverso.append(palavra[i])
+
+print(inverso)
